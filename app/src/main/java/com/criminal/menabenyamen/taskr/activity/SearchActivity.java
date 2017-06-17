@@ -24,7 +24,7 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
     private SearchAdapter workItemListAdapter;
     private RecyclerView.LayoutManager layoutManager;
     private MenuItem menuItem;
-    private CallBacks callBacks;
+  
 
 
     @Override
@@ -74,8 +74,4 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
         return true;
     }
 
-    public interface CallBacks {
-        void onListItemClicked(WorkItem workItem);
-        void onListItemLongClicked(WorkItem workItem);
     }
-}
